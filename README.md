@@ -65,7 +65,7 @@ The following diagrams illustrate the system architecture and main flows:
 ---
 
 ### 3. Sequence diagram — Login flow
-   <img width="982" height="597" alt="Sequence diagram — Login flow" src="https://github.com/user-attachments/assets/1428b48b-70cf-4cb5-bed8-7510157c6c1d" />
+   <img width="1140" height="597" alt="V3 Sequence diagram — Login flow" src="https://github.com/user-attachments/assets/098481a1-83e9-48d4-ad26-0987198e70e0" />
 ---
 
 ### 4. Sequence diagram — Publish Article (Author creates article)
