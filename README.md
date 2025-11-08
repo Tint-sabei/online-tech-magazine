@@ -58,32 +58,26 @@ The following diagrams illustrate the system architecture and main flows:
 
 ### 1. Class diagram (database / domain entities)
    <img width="718" height="718" alt="Class diagram (database  domain entities)" src="https://github.com/user-attachments/assets/46af370e-1a30-4e0f-8546-eded61ce81e0" />
-
 ---
 
 ### 2. Use case diagram (actors and main use cases)
    <img width="357" height="675" alt="Use case diagram (actors and main use cases)" src="https://github.com/user-attachments/assets/e12aa56d-c503-4377-b8a0-8f8c9f339ff9" />
-
 ---
 
 ### 3. Sequence diagram — Login flow
    <img width="982" height="597" alt="Sequence diagram — Login flow" src="https://github.com/user-attachments/assets/1428b48b-70cf-4cb5-bed8-7510157c6c1d" />
-
 ---
 
 ### 4. Sequence diagram — Publish Article (Author creates article)
    <img width="1060" height="526" alt="Sequence diagram — Publish Article (Author creates article)" src="https://github.com/user-attachments/assets/b327ebd6-58aa-4feb-a93f-d0c8e2b44202" />
-
 ---
 
 ### 5. Sequence diagram — Post Comment  
 <img width="824" height="393" alt="Sequence diagram — Post Comment" src="https://github.com/user-attachments/assets/89720deb-de9c-4f43-90e1-e9371c5fbc57" />
-
 ---
 
 ### MariaDB Schema Diagram
 <img width="1161" height="745" alt="MariaDB" src="https://github.com/user-attachments/assets/35e909e8-6536-4783-b7e6-4ffbf4bf6e80" />
-
 ---
 
 ## Functionalities Overview
