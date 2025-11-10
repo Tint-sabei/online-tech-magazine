@@ -1,142 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Tech Magazine – Project Description</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Tech Magazine</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: "Segoe UI", Arial, sans-serif;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
     }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      background: white;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
     h1, h2, h3 {
-      color: #2b4b8c;
+      color: #003366;
     }
-    section {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    h1 {
+      border-bottom: 3px solid #003366;
+      padding-bottom: 10px;
     }
+
     ul {
-      list-style-type: square;
-      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+    }
+
+    hr {
+      margin: 40px 0;
+      border: 0;
+      height: 2px;
+      background-color: #eee;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: white;
+    }
+
+    strong {
+      color: #002244;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Online Tech Magazine</h1>
-    <p><strong>Author:</strong> Tint Sabei Soe Win<br>
-    <strong>Group:</strong> 232</p>
+    <p><strong>Author:</strong> Tint Sabei Soe Win | <strong>Group:</strong> 232</p>
   </header>
 
-  <section>
+  <main>
     <h2>Project Description</h2>
-    <p>The <strong>Online Tech Magazine</strong> is a dynamic web application designed to provide readers with the latest articles, news, and reviews in technology, software, and innovation. 
-    The main goal is to create a functional and interactive platform where users can easily access, publish, and manage digital content.</p>
-    <p>The system is developed using <strong>PHP</strong> and <strong>MySQL</strong>, supporting full CRUD operations (Create, Read, Update, Delete) through a reusable interface that ensures clean and maintainable code.</p>
-  </section>
+    <p>The <strong>Online Tech Magazine</strong> is a dynamic web application designed to provide readers with the latest articles, news, and reviews in the field of technology, software, and innovation. The main goal of the project is to create a functional and interactive platform where users can easily access, publish, and manage digital content.</p>
+    <p>The system is developed using <strong>PHP</strong> and <strong>MySQL</strong>, supporting full CRUD operations (Create, Read, Update, Delete) to manage data efficiently. These operations are implemented through a reusable interface to avoid repetitive code and ensure maintainable functionality.</p>
 
-  <section>
     <h2>Purpose</h2>
-    <p>This website serves as a hub for technology enthusiasts, offering news, reviews, and informative articles. It allows both readers and content creators to interact and engage seamlessly with the platform.</p>
-  </section>
+    <p>This website serves as a hub for technology enthusiasts, offering news, reviews, and informative articles. It allows both readers and content creators to interact and engage with the platform seamlessly.</p>
 
-  <section>
     <h2>Target Users</h2>
     <ul>
       <li><strong>Visitors:</strong> Can browse articles, read comments, and send messages via the contact form.</li>
       <li><strong>Registered Authors:</strong> Can create, edit, and delete their own articles, post comments, and access basic analytics.</li>
       <li><strong>Administrators:</strong> Have full control over all articles, users, comments, and reports, including site analytics and external content management.</li>
     </ul>
-  </section>
 
-  <section>
     <h2>Main Features</h2>
     <ul>
       <li>Browse articles by category</li>
-      <li>Create, edit, and delete articles (for authors and admins)</li>
+      <li>Create, edit, delete articles (for authors and admins)</li>
       <li>Post comments on articles</li>
       <li>Contact form to send messages to administrators</li>
       <li>Analytics and reporting of visits, popular articles, and user activity</li>
       <li>Integration of external content from technology news sources</li>
     </ul>
-  </section>
 
-  <section>
     <h2>Architecture</h2>
     <h3>Roles / Actors</h3>
     <ul>
-      <li><strong>Visitor:</strong> Unregistered user who can browse content and send messages.</li>
-      <li><strong>Author:</strong> Registered user who can manage their own articles and post comments.</li>
-      <li><strong>Administrator:</strong> Full control over all entities, analytics, and external content.</li>
+      <li><strong>Visitor:</strong> Unregistered user, can browse content and send messages.</li>
+      <li><strong>Author:</strong> Registered user, can manage their own articles and post comments.</li>
+      <li><strong>Administrator:</strong> Full control over articles, users, comments, analytics, and external content.</li>
     </ul>
 
     <h3>Main Entities (Database Tables)</h3>
     <ul>
-      <li><strong>USER:</strong> Stores information about users, including roles and registration dates.</li>
+      <li><strong>USER:</strong> Stores information about users, including role and registration date.</li>
       <li><strong>ARTICLE:</strong> Contains articles with title, content, image, category, and author.</li>
       <li><strong>CATEGORY:</strong> Defines categories for articles (e.g., AI, Gadgets).</li>
-      <li><strong>COMMENT:</strong> Stores comments posted by users.</li>
+      <li><strong>COMMENT:</strong> Stores comments posted by users on articles.</li>
       <li><strong>VISIT:</strong> Records user visits for analytics.</li>
       <li><strong>MESSAGE:</strong> Stores messages sent via the contact form.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Relationships</h2>
+    <h3>Relationships</h3>
     <ul>
-      <li>USER → ARTICLE: One user can write multiple articles (1:N)</li>
-      <li>CATEGORY → ARTICLE: One category can contain many articles (1:N)</li>
-      <li>ARTICLE → COMMENT: One article can have multiple comments (1:N)</li>
-      <li>USER → COMMENT: One user can post multiple comments (1:N)</li>
-      <li>USER → VISIT: One user can have multiple visits (0:N, guest visits possible)</li>
-      <li>USER → MESSAGE: One user can send multiple messages (0:N)</li>
+      <li><strong>USER → ARTICLE:</strong> One user can write multiple articles (1:N)</li>
+      <li><strong>CATEGORY → ARTICLE:</strong> One category can contain many articles (1:N)</li>
+      <li><strong>ARTICLE → COMMENT:</strong> One article can have multiple comments (1:N)</li>
+      <li><strong>USER → COMMENT:</strong> One user can post multiple comments (1:N)</li>
+      <li><strong>USER → VISIT:</strong> One user can have multiple visits (0:N, guest visits possible)</li>
+      <li><strong>USER → MESSAGE:</strong> One user can send multiple messages (0:N)</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Main Components</h2>
+    <h3>Main Components</h3>
     <ul>
       <li><strong>Frontend Pages:</strong> Homepage, article view, categories, user profile, admin dashboard</li>
-      <li><strong>Backend Scripts:</strong> PHP scripts handling CRUD operations, login, sessions, and analytics</li>
+      <li><strong>Backend Scripts:</strong> PHP scripts handling CRUD operations, login, sessions, analytics</li>
       <li><strong>Database:</strong> MariaDB storing all entities and relationships</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Implementation Details</h2>
-    <p>The implementation uses PHP for backend logic, MySQL for data persistence, and HTML/CSS for the user interface. 
-    UML diagrams are used to represent database entities, use cases, and system flows such as login, article publishing, and commenting.</p>
-  </section>
+    <h2>UML Diagrams</h2>
 
-  <section>
-  <h2>UML Diagrams</h2>
+    <h3>1. Class diagram (database / domain entities)</h3>
+    <img src="https://github.com/user-attachments/assets/46af370e-1a30-4e0f-8546-eded61ce81e0" alt="Class Diagram" />
 
-  <h3>1. Class Diagram</h3>
-  <p>The following diagram represents the main database and domain entities of the Online Tech Magazine system.</p>
-  <img src="images/class-diagram.png" alt="Class Diagram" width="700">
+    <h3>2. Use case diagram (actors and main use cases)</h3>
+    <img src="https://github.com/user-attachments/assets/e12aa56d-c503-4377-b8a0-8f8c9f339ff9" alt="Use Case Diagram" />
 
-  <h3>2. Use Case Diagram</h3>
-  <p>This diagram shows the main actors and their interactions with the system.</p>
-  <img src="images/usecase-diagram.png" alt="Use Case Diagram" width="700">
+    <h3>3. Sequence diagram — Login flow</h3>
+    <img src="https://github.com/user-attachments/assets/098481a1-83e9-48d4-ad26-0987198e70e0" alt="Login Flow" />
 
-  <h3>3. Sequence Diagram — Login Flow</h3>
-  <p>Illustrates the login interaction between the user, authentication module, and database.</p>
-  <img src="images/sequence-login.png" alt="Login Sequence Diagram" width="700">
+    <h3>4. Sequence diagram — Publish Article (Author creates article)</h3>
+    <img src="https://github.com/user-attachments/assets/b327ebd6-58aa-4feb-a93f-d0c8e2b44202" alt="Publish Article Sequence" />
 
-  <h3>4. Sequence Diagram — Publish Article</h3>
-  <p>Shows the process flow when an author creates and publishes a new article.</p>
-  <img src="images/sequence-publish.png" alt="Publish Article Sequence Diagram" width="700">
-</section>
+    <h3>5. Sequence diagram — Post Comment</h3>
+    <img src="https://github.com/user-attachments/assets/89720deb-de9c-4f43-90e1-e9371c5fbc57" alt="Post Comment Sequence" />
+
+    <h3>MariaDB Schema Diagram</h3>
+    <img src="https://github.com/user-attachments/assets/35e909e8-6536-4783-b7e6-4ffbf4bf6e80" alt="MariaDB Schema" />
+
+    <h2>Functionalities Overview</h2>
+    <ul>
+      <li><strong>User Registration & Authentication:</strong> Secure login/logout and session management</li>
+      <li><strong>Role-Based Access Control:</strong> Different permissions for visitors, authors, and administrators</li>
+      <li><strong>Article Management:</strong> Full CRUD for authors and admins</li>
+      <li><strong>Category Management:</strong> Admins can manage categories</li>
+      <li><strong>Commenting System:</strong> Users can comment, admins moderate</li>
+      <li><strong>Analytics & Reports:</strong> Track visits, article popularity, user activity</li>
+      <li><strong>Contact Form:</strong> Allows sending messages to administrators</li>
+      <li><strong>External Content Integration:</strong> Import and display content from external tech sources</li>
+      <li><strong>Session Termination:</strong> Automatic logout for security</li>
+    </ul>
+
+    <hr />
+  </main>
 
   <footer>
-    <p><em>Online Tech Magazine – Project for DAW (PHP) Course</em></p>
+    <p>© 2025 Online Tech Magazine Project | Tint Sabei Soe Win, Group 232</p>
   </footer>
 </body>
 </html>
