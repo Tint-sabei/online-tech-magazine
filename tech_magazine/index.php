@@ -48,7 +48,11 @@ try {
             <?php foreach ($articles as $article): ?>
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title"><?= htmlspecialchars($article['title']) ?></h5>
+                        <h5 class="card-title">
+                            <a href="article_view.php?id=<?= $article['article_id'] ?>" class="text-decoration-none">
+                                <?= htmlspecialchars($article['title']) ?>
+                            </a>
+                        </h5>   
                         <p class="card-text text-muted small">
                             Posted by: <strong><?= htmlspecialchars($users_map[$article['author_id']] ?? 'Unknown') ?><strong> on <?= date("F j, Y", strtotime($article['date_posted'])) ?>
                         </p>
