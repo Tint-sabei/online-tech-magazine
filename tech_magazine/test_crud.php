@@ -8,9 +8,9 @@ require_once 'classes/operatii_db.php';
 
 // --- Configuration for testing (UPDATE THESE IDs!) ---
 // NOTE: Get these IDs from your phpMyAdmin after running the SQL inserts
-$TEST_USER_ID = 1;      // <-- CHANGE THIS: ID of the 'test_author' user
-$TEST_CATEGORY_ID = 1;  // <-- CHANGE THIS: ID of the 'Software' category
-$TEST_ARTICLE_ID = 0;   // Will store the ID of the article created in this test
+$TEST_USER_ID = 1;      
+$TEST_CATEGORY_ID = 1;  
+$TEST_ARTICLE_ID = 0;  
 
 echo "<h1>OperatiiDB CRUD Verification Test</h1>";
 echo "<h2>Configuration: User ID {$TEST_USER_ID}, Category ID {$TEST_CATEGORY_ID}</h2>";
@@ -129,4 +129,5 @@ if ($TEST_ARTICLE_ID > 0) {
 echo "<hr>";
 
 // Final check: If all four tests passed, the core logic is sound.
+
 ?>
