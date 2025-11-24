@@ -6,7 +6,7 @@ session_start();
 require_once 'classes/Database.php'; 
 require_once 'classes/operatii_db.php'; 
 
-// --- Configuration for testing (UPDATE THESE IDs!) ---
+// --- Configuration for testing ---
 // NOTE: Get these IDs from your phpMyAdmin after running the SQL inserts
 $TEST_USER_ID = 1;      
 $TEST_CATEGORY_ID = 1;  
@@ -131,3 +131,4 @@ echo "<hr>";
 // Final check: If all four tests passed, the core logic is sound.
 
 ?>
+
