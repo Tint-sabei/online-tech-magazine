@@ -1,0 +1,102 @@
+/* 1. GLOBAL SETTINGS */
+:root {
+    --primary-lavender: #D1C4E9;
+    --dark-lavender: #512DA8;
+    --soft-peach: #FFCCBC;
+    --light-lavender-bg: #F3E5F5;
+    --text-muted: #607D8B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #455A64;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. NAVIGATION BAR */
+.navbar {
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid var(--primary-lavender);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: var(--dark-lavender) !important;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: var(--dark-lavender) !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+/* 3. BUTTONS (Login/Register/Logout) */
+.btn-primary,
+.btn-rounded {
+    background-color: var(--primary-lavender) !important;
+    color: var(--dark-lavender) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 8px 25px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-lavender) !important;
+    color: #FFFFFF !important;
+    transform: scale(1.05);
+}
+
+/* 4. HERO SECTION */
+.hero-section {
+    background-color: var(--light-lavender-bg);
+    border-bottom: 5px solid var(--primary-lavender);
+}
+
+.hero-section h1 {
+    color: var(--dark-lavender);
+    line-height: 1.1;
+}
+
+.hero-section img {
+    border: 10px solid #FFFFFF;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. ARTICLE CARDS */
+.card {
+    border-radius: 25px !important;
+    border: none !important;
+    background: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(209, 196, 233, 0.2) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(209, 196, 233, 0.4) !important;
+}
+
+/* Category Badges (Peach color) */
+.badge {
+    background-color: var(--soft-peach) !important;
+    color: #D84315 !important;
+    border-radius: 50px !important;
+    padding: 6px 15px !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 6. CALL TO ACTION BLOCK */
+.cta-block {
+    background: linear-gradient(135deg, var(--primary-lavender), #E1BEE7) !important;
+    border-radius: 35px !important;
+    color: var(--dark-lavender) !important;
+    border: none !important;
+}
