@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
         if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){ 
             
             // Google reCAPTCHA API secret key 
-            $secret_key = '6LdQJCYsAAAAADr5TXDzVskWV-1nm4LSmKvTaBdU'; 
+            $secret_key = 'xxx'; 
             
             // ReCAPTCHA verification API call
             $verify_captcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$_POST['g-recaptcha-response']); 
