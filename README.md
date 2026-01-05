@@ -9,7 +9,7 @@ The **Online Tech Magazine** is a dynamic web application designed to provide re
 The system is developed using **PHP** and **MySQL**, supporting full CRUD operations (Create, Read, Update, Delete) to manage data efficiently. These operations are implemented through a reusable interface to avoid repetitive code and ensure maintainable functionality.
 
 ## Purpose
-This website serves as a hub for technology enthusiasts, offering news, reviews, and informative articles. It allows both readers and content creators to interact and engage with the platform seamlessly.
+This website serves as a hub for technology enthusiasts, offaering news, reviews, and informative articles. It allows both readers and content creators to interact and engage with the platform seamlessly.
 
 ## Target Users
 - **Visitors:** Can browse articles, read comments, and send messages via the contact form.  
@@ -61,7 +61,7 @@ The following diagrams illustrate the system architecture and main flows:
 ---
 
 ### 2. Use case diagram (actors and main use cases)
-   <img width="357" height="675" alt="Use case diagram (actors and main use cases)" src="https://github.com/user-attachments/assets/e12aa56d-c503-4377-b8a0-8f8c9f339ff9" />
+<img width="469" height="716" alt="New Use case" src="https://github.com/user-attachments/assets/6600a5ab-886d-4243-8b71-fc5da208a80e" />
 ---
 
 ### 3. Sequence diagram — Login flow
