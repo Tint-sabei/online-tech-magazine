@@ -1,5 +1,3 @@
-# Online Tech Magazine
-
 **Author:** Tint Sabei Soe Win  
 **Group:** 232
 
@@ -12,12 +10,11 @@ The system is developed using **PHP** and **MySQL**, supporting full CRUD operat
 This website serves as a hub for technology enthusiasts, offaering news, reviews, and informative articles. It allows both readers and content creators to interact and engage with the platform seamlessly.
 
 ## Target Users
-- **Visitors:** Can browse articles, read comments, and send messages via the contact form.  
-- **Registered Authors:** Can create, edit, and delete their own articles, post comments, and access basic analytics.  
-- **Administrators:** Have full control over all articles, users, comments, and reports, including site analytics and external content management.
+- **Guest Readers (Visitors):** No registration required. They can read all articles, post comments, and download the analytics reports.
+- **Registered Authors:** Can create and edit their own articles.
+- **Administrators:** Full system control, including the ability to delete articles and generate/regenerate the analytics reports.
 
 ## Main Features
-- Browse articles by category  
 - Create, edit, delete articles (for authors and admins)  
 - Post comments on articles  
 - Contact form to send messages to administrators  
@@ -34,7 +31,7 @@ The Online Tech Magazine is structured with the following components:
 
 ### Main Entities (Database Tables)
 - **USER:** Stores information about users, including role and registration date.  
-- **ARTICLE:** Contains articles with title, content, image, category, and author.  
+- **ARTICLE:** Contains articles with title, content, image, category, author, date.  
 - **CATEGORY:** Defines categories for articles (e.g., AI, Gadgets).  
 - **COMMENT:** Stores comments posted by users on articles.  
 - **VISIT:** Records user visits for analytics.  
@@ -49,7 +46,7 @@ The Online Tech Magazine is structured with the following components:
 - **USER → MESSAGE:** One user can send multiple messages (0:N)
 
 ### Main Components
-- **Frontend Pages:** Homepage, article view, categories, user profile, admin dashboard  
+- **Frontend Pages:** Homepage, article view, contact page, and authentication pages 
 - **Backend Scripts:** PHP scripts handling CRUD operations, login, sessions, analytics  
 - **Database:** MariaDB storing all entities and relationships
 
