@@ -101,14 +101,13 @@
 
     <h2>Target Users</h2>
     <ul>
-      <li><strong>Visitors:</strong> Can browse articles, read comments, and send messages via the contact form.</li>
-      <li><strong>Registered Authors:</strong> Can create, edit, and delete their own articles, post comments, and access basic analytics.</li>
-      <li><strong>Administrators:</strong> Have full control over all articles, users, comments, and reports, including site analytics and external content management.</li>
+      <li><strong>Guest Readers (Visitors):</strong> No registration required. They can read all articles, post comments, and download the analytics reports.</li>
+      <li><strong>Registered Authors:</strong> Can create and edit their own articles. </li>
+      <li><strong>Administrators:</strong> Full system control, including the ability to delete articles and generate/regenerate the analytics reports.</li>
     </ul>
 
     <h2>Main Features</h2>
     <ul>
-      <li>Browse articles by category</li>
       <li>Create, edit, delete articles (for authors and admins)</li>
       <li>Post comments on articles</li>
       <li>Contact form to send messages to administrators</li>
@@ -119,15 +118,15 @@
     <h2>Architecture</h2>
     <h3>Roles / Actors</h3>
     <ul>
-      <li><strong>Visitor:</strong> Unregistered user, can browse content and send messages.</li>
+      <li><strong>Visitor:</strong> Unregistered user, can browse content, post comment, and send messages.</li>
       <li><strong>Author:</strong> Registered user, can manage their own articles and post comments.</li>
-      <li><strong>Administrator:</strong> Full control over articles, users, comments, analytics, and external content.</li>
+      <li><strong>Administrator:</strong> Full control over articles and analytics.</li>
     </ul>
 
     <h3>Main Entities (Database Tables)</h3>
     <ul>
       <li><strong>USER:</strong> Stores information about users, including role and registration date.</li>
-      <li><strong>ARTICLE:</strong> Contains articles with title, content, image, category, and author.</li>
+      <li><strong>ARTICLE:</strong> Contains articles with title, content, image, category, author, and date.</li>
       <li><strong>CATEGORY:</strong> Defines categories for articles (e.g., AI, Gadgets).</li>
       <li><strong>COMMENT:</strong> Stores comments posted by users on articles.</li>
       <li><strong>VISIT:</strong> Records user visits for analytics.</li>
@@ -146,7 +145,7 @@
 
     <h3>Main Components</h3>
     <ul>
-      <li><strong>Frontend Pages:</strong> Homepage, article view, categories, user profile, admin dashboard</li>
+      <li><strong>Frontend Pages:</strong> Homepage, article view, contact page, and authentication pages</li>
       <li><strong>Backend Scripts:</strong> PHP scripts handling CRUD operations, login, sessions, analytics</li>
       <li><strong>Database:</strong> MariaDB storing all entities and relationships</li>
     </ul>
@@ -157,7 +156,6 @@
     <img src="https://github.com/user-attachments/assets/46af370e-1a30-4e0f-8546-eded61ce81e0" alt="Class Diagram" />
 
     <h3>2. Use case diagram (actors and main use cases)</h3>
-    <img src="https://github.com/user-attachments/assets/e12aa56d-c503-4377-b8a0-8f8c9f339ff9" alt="Use Case Diagram" />
 
     <h3>3. Sequence diagram — Login flow</h3>
     <img src="https://github.com/user-attachments/assets/098481a1-83e9-48d4-ad26-0987198e70e0" alt="Login Flow" />
@@ -177,10 +175,10 @@
       <li><strong>Role-Based Access Control:</strong> Different permissions for visitors, authors, and administrators</li>
       <li><strong>Article Management:</strong> Full CRUD for authors and admins</li>
       <li><strong>Category Management:</strong> Admins can manage categories</li>
-      <li><strong>Commenting System:</strong> Users can comment, admins moderate</li>
-      <li><strong>Analytics & Reports:</strong> Track visits, article popularity, user activity</li>
+      <li><strong>Commenting System:</strong> Both unregistered and registered users can comment</li>
+      <li><strong>Analytics & Reports:</strong> Track visits and user activity</li>
       <li><strong>Contact Form:</strong> Allows sending messages to administrators</li>
-      <li><strong>External Content Integration:</strong> Import and display content from external tech sources</li>
+      <li><strong>External Content Integration:</strong> Import and display content from an external tech source</li>
       <li><strong>Session Termination:</strong> Automatic logout for security</li>
     </ul>
 
