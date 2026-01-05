@@ -141,7 +141,7 @@ if(isset($_SESSION['contact_msg'])) {
             <textarea name="content" class="form-control" rows="5" placeholder="How can we help you today?" required></textarea> 
             
             <div class="captcha-wrapper">
-                <div class="g-recaptcha" data-sitekey="6LdQJCYsAAAAAGP0iFoCWWWI_GEVgxHBSEgt60-s"></div>
+                <div class="g-recaptcha" data-sitekey="xxx"></div>
                 
                 <button type="submit" name="submit" class="btn-submit shadow-sm">SEND MESSAGE</button>
             </div>
